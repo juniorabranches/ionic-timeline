@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Timeline Example
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="job-status">
+    <h2>Status</h2>
+    <ion-list no-lines>
+        <ion-item class="active">
+            <span item-start class="circle"></span>
+            <div class="text">
+                <h4 class="text-ellipsis">processing payment
+                </h4>
+            </div>
+        </ion-item>
+        <ion-item class="active">
+            <span item-start class="circle"></span>
+            <div class="text">
+                <h4 class="text-ellipsis">payment confirmed
+                    <small>confirmed on 20<sup>th</sup> Jan, 09:00 - 11:00</small>
+                </h4>
+            </div>
+        </ion-item>
+        <ion-item class="disable">
+            <span item-start class="circle"></span>
+            <div class="text">
+                <h4 class="text-ellipsis">request in preparation
+                </h4>
+            </div>
+        </ion-item>
+        <ion-item class="disable">
+          <span item-start class="circle"></span>
+          <div class="text">
+              <h4 class="text-ellipsis">out for delivery
+              </h4>
+          </div>
+      </ion-item>
+      <ion-item class="disable">
+        <span item-start class="circle"></span>
+        <div class="text">
+            <h4 class="text-ellipsis">delivered
+                <small>Job Completed on 12:30 | <span>Client Reviewed <span class="text-green"> 4 <ion-icon name="md-star"></ion-icon></span></span></small>
+            </h4>
+        </div>
+    </ion-item>              
+  </ion-list>
+</div>
+</ion-content>

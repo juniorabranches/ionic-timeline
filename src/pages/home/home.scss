@@ -1,0 +1,152 @@
+page-home {
+    .job-status {
+        padding: 26px 28px;
+        padding-bottom: 0;
+        .circle {
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #dedede;
+            margin-left: 2px;
+            margin-top: 20px;
+        }
+        h2 {
+            margin: 0;
+            font-size: 1.58rem;
+            padding-bottom: 12px;
+            color: #6d6b71;
+        }
+        .list {
+            margin-bottom: 0;
+            padding: 0;
+            .item {
+                position: relative;
+                min-height: 65px;
+                align-items: flex-start;
+                background: none;
+                padding: 0;
+                padding-bottom: 5px;
+                &::after,
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0px;
+                    left: 7px;
+                    right: 0;
+                    width: 1px;
+                    height: 20px;
+                    background: #c9c9c9;
+                    display: block
+                }
+                &::after {
+                    top: auto;
+                    bottom: 0;
+                    height: 30px;
+                }
+                &:first-child {
+                    &::before {
+                        display: none;
+                    }
+                }
+                .label {
+                    margin: 0;
+                }
+                .text {
+                    position: relative;
+                    top: 0;
+                    bottom: 0;
+                    left: 14px !important;
+                    height: 65px;
+                    width: 100%;
+                    background: #fff;
+                    padding-top: 13px;
+                    padding-bottom: 13px;
+                    padding-left: 6px;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 17px;
+                        left: -7px;
+                        width: 14px;
+                        height: 14px;
+                        display: block;
+                        transform: rotate(45deg);
+                        background: #fff;
+                    }
+                    h4 {
+                        margin: 0;
+                        font-size: 1.58rem;
+                        font-weight: 500;
+                        position: relative;
+                        left: 12px;
+                        height: 100%;
+                        line-height: 20px;
+                        small {
+                            display: block;
+                            position: absolute;
+                            bottom: 13px;
+                            font-size: 1.1rem;
+                            color: #a8a8a8;
+                            font-weight: 300;
+                            top: 20px;
+                        }
+                    }
+                }
+                &.disable {
+                    .status {
+                        background: #dedede;
+                    }
+                    h4 {
+                        opacity: 0.2;
+                        line-height: 38px;
+                        small {
+                            display: none;
+                        }
+                    }
+                    .text {
+                        background-color: transparent;
+                        &::after {
+                            display: none;
+                        }
+                    }
+                    .circle {
+                        margin-top: 27px;
+                    }
+                }
+                &.active {
+                    h4 {
+                        &::after {
+                            background: #fff;
+                        }
+                    }
+                    ion-icon {
+                        &[item-start] {
+                            color: #17b60f;
+                        }
+                    }
+                    .circle {
+                        background: #17b60f;
+                        position: relative;
+                        &::after {
+                            content: '';
+                            border-radius: 50%;
+                            border: 1px solid #17b60f;
+                            width: 12px;
+                            height: 12px;
+                            position: absolute;
+                            display: block;
+                            top: -2px;
+                            left: -2px;
+                        }
+                    }
+                }
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
